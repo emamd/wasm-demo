@@ -4,8 +4,16 @@
         <script>
             // this is read and used by site.js
             var Module = {
-                wasmBinaryFile: "site.wasm"
-            }
+                wasmBinaryFile: "site.wasm",
+                // We don't always need this line, just
+                // in the experiments where we're calling JS functions
+                //onRuntimeInitialized: main,
+            };
+
+            //function main() {
+            //    let get_data = Module.cwrap('get_data', 'string', []);
+            //    console.log(get_data());
+            //}
         </script>
         <script src="site.js"></script>
     </head>

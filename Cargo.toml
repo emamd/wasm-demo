@@ -4,6 +4,4 @@ version = "0.1.0"
 authors = ["Armand Emamdjomeh <armand.emamdjomeh@washpost.com>"]
 
 [dependencies]
-serde_json = "*"
-serde_derive = "*"
-serde = "*"
+webplatform = "*"
